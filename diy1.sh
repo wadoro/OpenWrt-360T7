@@ -13,10 +13,11 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add feed sources
-sed -i '$a src-git-full small https://github.com/kenzok8/small-package' feeds.conf.default
-git clone https://github.com/CHN-beta/rkp-ipid package/rkp-ipid
-git clone https://github.com/Zxilly/UA2F package/UA2F
-# theme
-# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-# rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
+# Add a feed source
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
+#echo 'src-git Boos4721 https://github.com/Boos4721/OpenWrt-Packages' >>feeds.conf.default
+echo 'src-git fichenx https://github.com/fichenx/openwrt-package' >>feeds.conf.default
+
+echo "203.107.6.88 time.android.com" >> package/base-files/files/etc/hosts

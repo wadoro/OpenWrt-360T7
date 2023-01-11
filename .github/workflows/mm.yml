@@ -41,8 +41,8 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: Redmi-AX6-IPV6_Openwrt
-  PRODUCT_NAME: Redmi-AX6-IPV6_Openwrt
+  FILE_NAME: mm
+  PRODUCT_NAME: mm
 
 jobs:
   build:
@@ -76,9 +76,6 @@ jobs:
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y-%m-%d")" >> $GITHUB_ENV
         
-    - name: Revert some drop sh*t
-      run: cp -rf $GITHUB_WORKSPACE/general/AX6/* openwrt/
-          
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default

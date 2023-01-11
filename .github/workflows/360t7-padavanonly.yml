@@ -19,8 +19,8 @@ on:
     - cron: 0 16 * * 5
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrtARM
-  REPO_BRANCH: b793af8d1a5ef60c94fc6f6661226863957b25ee
+  REPO_URL: https://github.com/wadoro/360
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: padavanonly.config
   DIY_P1_SH: diy1.sh
